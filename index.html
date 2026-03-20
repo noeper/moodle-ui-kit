@@ -5,86 +5,338 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moodle UI Kit</title>
 </head>
-<body style="margin:0; font-family: Arial, sans-serif; background-color:#f5f7fb; color:#222;">
+<body style="font-family: Arial, sans-serif; background-color: #f7f7f7; margin: 0; padding: 20px;">
 
-  <div style="max-width: 1000px; margin: 0 auto; padding: 32px 20px;">
+  <div style="max-width: 900px; margin: 0 auto;">
 
-    <div style="background-color:#ffffff; border:1px solid #DCDFE5; border-radius:12px; padding:24px; margin-bottom:24px;">
-      <p style="margin:0 0 8px 0; font-size:30px; font-weight:bold; color:#4174c0;">🧩 Moodle UI Kit</p>
-      <p style="margin:0; font-size:16px; line-height:1.6; color:#555;">
-        Colección de plantillas HTML reutilizables para crear actividades, preguntas, bloques de código y feedback en Moodle.
-      </p>
+    <h1 style="margin-top: 0; color: #4174c0;">
+      🧩 Moodle UI Kit
+    </h1>
+
+    <p style="margin-top: 0; color: #555;">
+      Plantillas HTML reutilizables para crear actividades y contenido en Moodle.
+    </p>
+
+    <div style="margin-top: 20px;">
+
+      <!-- ACTIVITY TEMPLATE -->
+      <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px;">
+        <strong>🧠 Activity template</strong><br>
+        <span style="color: #666;">Plantilla completa con objetivo, enunciado y entregable.</span><br><br>
+
+        <button onclick="togglePreview('preview-activity')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:8px 12px; cursor:pointer; margin-right:8px;">
+          Abrir plantilla
+        </button>
+
+        <button onclick="toggleCode('code-activity')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer;">
+          Mostrar código
+        </button>
+
+        <div id="preview-activity" style="display:none; margin-top:16px;">
+          <div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; margin: 12px 0;">
+            <div style="background-color: #4174c0; color: white; padding: 6px 12px; font-size: 15px; font-weight: 600;">
+              🧠 [TÍTULO DE LA ACTIVIDAD]
+            </div>
+            <div style="padding: 20px; font-size: 1.05rem; line-height: 1.6;">
+              <div style="margin: 12px 0;">
+                <p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;">🎯 Objetivo</p>
+                <p style="margin: 0;">[DESCRIPCIÓN DEL OBJETIVO]</p>
+              </div>
+              <hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;">
+              <div style="margin: 12px 0;">
+                <p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;">📋 Enunciado</p>
+                <div>[INSTRUCCIONES / PASOS / TEXTO DEL EJERCICIO]</div>
+              </div>
+              <hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;">
+              <div style="margin: 12px 0;">
+                <p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;">📤 Entregable</p>
+                <p style="margin: 0;">[QUÉ DEBE ENTREGAR EL ALUMNO]</p>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="hideBlock('preview-activity')" style="background:none; border:none; color:#666; cursor:pointer; padding:0;">
+            Ocultar plantilla
+          </button>
+        </div>
+
+        <div id="code-activity" style="display:none; margin-top:16px;">
+          <div style="text-align:right; margin-bottom:6px;">
+            <button onclick="copyCode('code-text-activity')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
+              Copiar código
+            </button>
+          </div>
+          <pre id="code-text-activity" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; margin: 12px 0;"&gt;
+
+  &lt;div style="background-color: #4174c0; color: white; padding: 6px 12px; font-size: 15px; font-weight: 600;"&gt;
+    🧠 [TÍTULO DE LA ACTIVIDAD]
+  &lt;/div&gt;
+
+  &lt;div style="padding: 20px; font-size: 1.05rem; line-height: 1.6;"&gt;
+
+    &lt;div style="margin: 12px 0;"&gt;
+      &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;"&gt;🎯 Objetivo&lt;/p&gt;
+      &lt;p style="margin: 0;"&gt;[DESCRIPCIÓN DEL OBJETIVO]&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;"&gt;
+
+    &lt;div style="margin: 12px 0;"&gt;
+      &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;"&gt;📋 Enunciado&lt;/p&gt;
+      &lt;div&gt;[INSTRUCCIONES / PASOS / TEXTO DEL EJERCICIO]&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;"&gt;
+
+    &lt;div style="margin: 12px 0;"&gt;
+      &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;"&gt;📤 Entregable&lt;/p&gt;
+      &lt;p style="margin: 0;"&gt;[QUÉ DEBE ENTREGAR EL ALUMNO]&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+          <button onclick="hideBlock('code-activity')" style="background:none; border:none; color:#666; cursor:pointer; padding:0; margin-top:8px;">
+            Ocultar código
+          </button>
+        </div>
+      </div>
+
+      <!-- CODE TEMPLATE -->
+      <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px;">
+        <strong>💻 Code template</strong><br>
+        <span style="color: #666;">Bloque de código integrado para actividades.</span><br><br>
+
+        <button onclick="togglePreview('preview-code')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:8px 12px; cursor:pointer; margin-right:8px;">
+          Abrir plantilla
+        </button>
+
+        <button onclick="toggleCode('code-code')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer;">
+          Mostrar código
+        </button>
+
+        <div id="preview-code" style="display:none; margin-top:16px;">
+          <div style="margin: 12px 0;">
+            <div style="text-align: right; font-size: 11px; color: #888; margin-bottom: 4px;">
+              Python
+            </div>
+            <pre style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto; margin: 0;"><code>print("Hola, mundo")</code></pre>
+          </div>
+
+          <button onclick="hideBlock('preview-code')" style="background:none; border:none; color:#666; cursor:pointer; padding:0;">
+            Ocultar plantilla
+          </button>
+        </div>
+
+        <div id="code-code" style="display:none; margin-top:16px;">
+          <div style="text-align:right; margin-bottom:6px;">
+            <button onclick="copyCode('code-text-code')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
+              Copiar código
+            </button>
+          </div>
+          <pre id="code-text-code" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="margin: 12px 0;"&gt;
+
+  &lt;div style="text-align: right; font-size: 11px; color: #888; margin-bottom: 4px;"&gt;
+    Python
+  &lt;/div&gt;
+
+  &lt;pre style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto; margin: 0;"&gt;&lt;code&gt;print("Hola, mundo")&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;</pre>
+
+          <button onclick="hideBlock('code-code')" style="background:none; border:none; color:#666; cursor:pointer; padding:0; margin-top:8px;">
+            Ocultar código
+          </button>
+        </div>
+      </div>
+
+      <!-- FEEDBACK TEMPLATE -->
+      <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px;">
+        <strong>✅ Feedback template</strong><br>
+        <span style="color: #666;">Bloque de feedback con explicación y código.</span><br><br>
+
+        <button onclick="togglePreview('preview-feedback')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:8px 12px; cursor:pointer; margin-right:8px;">
+          Abrir plantilla
+        </button>
+
+        <button onclick="toggleCode('code-feedback')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer;">
+          Mostrar código
+        </button>
+
+        <div id="preview-feedback" style="display:none; margin-top:16px;">
+          <div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; margin: 12px 0;">
+            <div style="background-color: #0c7c59; color: white; padding: 6px 12px; font-weight: 600; font-size: 15px;">
+              ✅ Código solución
+            </div>
+            <div style="background-color: #ffffff; padding: 16px; line-height: 1.6; font-size: 1.05rem;">
+              <div style="margin-bottom: 12px;">
+                <p style="margin: 0 0 6px 0; font-weight: bold; color: #0c7c59;">💡 Explicación</p>
+                <p style="margin: 0;">[EXPLICACIÓN]</p>
+              </div>
+              <div style="margin-top: 12px;">
+                <div style="text-align: right; font-size: 11px; color: #888; margin-bottom: 4px;">Python</div>
+                <pre style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto; margin: 0;"><code>[CÓDIGO SOLUCIÓN]</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="hideBlock('preview-feedback')" style="background:none; border:none; color:#666; cursor:pointer; padding:0;">
+            Ocultar plantilla
+          </button>
+        </div>
+
+        <div id="code-feedback" style="display:none; margin-top:16px;">
+          <div style="text-align:right; margin-bottom:6px;">
+            <button onclick="copyCode('code-text-feedback')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
+              Copiar código
+            </button>
+          </div>
+          <pre id="code-text-feedback" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; margin: 12px 0;"&gt;
+
+  &lt;div style="background-color: #0c7c59; color: white; padding: 6px 12px; font-weight: 600; font-size: 15px;"&gt;
+    ✅ Código solución
+  &lt;/div&gt;
+
+  &lt;div style="background-color: #ffffff; padding: 16px; line-height: 1.6; font-size: 1.05rem;"&gt;
+
+    &lt;div style="margin-bottom: 12px;"&gt;
+      &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #0c7c59;"&gt;💡 Explicación&lt;/p&gt;
+      &lt;p style="margin: 0;"&gt;[EXPLICACIÓN]&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div style="margin-top: 12px;"&gt;
+      &lt;div style="text-align: right; font-size: 11px; color: #888; margin-bottom: 4px;"&gt;Python&lt;/div&gt;
+      &lt;pre style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto; margin: 0;"&gt;&lt;code&gt;[CÓDIGO SOLUCIÓN]&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+          <button onclick="hideBlock('code-feedback')" style="background:none; border:none; color:#666; cursor:pointer; padding:0; margin-top:8px;">
+            Ocultar código
+          </button>
+        </div>
+      </div>
+
+      <!-- QUESTION TEMPLATE -->
+      <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px;">
+        <strong>❓ Question template</strong><br>
+        <span style="color: #666;">Plantilla mínima para enunciados de cuestionario.</span><br><br>
+
+        <button onclick="togglePreview('preview-question')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:8px 12px; cursor:pointer; margin-right:8px;">
+          Abrir plantilla
+        </button>
+
+        <button onclick="toggleCode('code-question')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer;">
+          Mostrar código
+        </button>
+
+        <div id="preview-question" style="display:none; margin-top:16px;">
+          <div style="background-color: #ffffff; padding: 12px 14px; border-radius: 6px; border: 1px solid #DCDFE5; font-family: Arial, sans-serif; line-height: 1.6; margin: 6px 0;">
+            <p style="margin: 0;">❓ [ENUNCIADO DE LA PREGUNTA]</p>
+          </div>
+
+          <button onclick="hideBlock('preview-question')" style="background:none; border:none; color:#666; cursor:pointer; padding:0;">
+            Ocultar plantilla
+          </button>
+        </div>
+
+        <div id="code-question" style="display:none; margin-top:16px;">
+          <div style="text-align:right; margin-bottom:6px;">
+            <button onclick="copyCode('code-text-question')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
+              Copiar código
+            </button>
+          </div>
+          <pre id="code-text-question" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="background-color: #ffffff; padding: 12px 14px; border-radius: 6px; border: 1px solid #DCDFE5; font-family: Arial, sans-serif; line-height: 1.6; margin: 6px 0;"&gt;
+
+  &lt;p style="margin: 0;"&gt;
+    ❓ [ENUNCIADO DE LA PREGUNTA]
+  &lt;/p&gt;
+
+&lt;/div&gt;</pre>
+
+          <button onclick="hideBlock('code-question')" style="background:none; border:none; color:#666; cursor:pointer; padding:0; margin-top:8px;">
+            Ocultar código
+          </button>
+        </div>
+      </div>
+
+      <!-- QUESTION FEEDBACK -->
+      <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px;">
+        <strong>🟢 Question feedback</strong><br>
+        <span style="color: #666;">Feedback ligero para preguntas de cuestionario.</span><br><br>
+
+        <button onclick="togglePreview('preview-question-feedback')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:8px 12px; cursor:pointer; margin-right:8px;">
+          Abrir plantilla
+        </button>
+
+        <button onclick="toggleCode('code-question-feedback')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer;">
+          Mostrar código
+        </button>
+
+        <div id="preview-question-feedback" style="display:none; margin-top:16px;">
+          <div style="background-color: #ffffff; padding: 12px 14px; border-radius: 6px; border: 1px solid #DCDFE5; font-family: Arial, sans-serif; line-height: 1.6; margin: 6px 0;">
+            <p style="margin: 0 0 6px 0; font-weight: bold; color: #0c7c59;">✅ Feedback</p>
+            <p style="margin: 0;">[EXPLICACIÓN]</p>
+          </div>
+
+          <button onclick="hideBlock('preview-question-feedback')" style="background:none; border:none; color:#666; cursor:pointer; padding:0;">
+            Ocultar plantilla
+          </button>
+        </div>
+
+        <div id="code-question-feedback" style="display:none; margin-top:16px;">
+          <div style="text-align:right; margin-bottom:6px;">
+            <button onclick="copyCode('code-text-question-feedback')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
+              Copiar código
+            </button>
+          </div>
+          <pre id="code-text-question-feedback" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="background-color: #ffffff; padding: 12px 14px; border-radius: 6px; border: 1px solid #DCDFE5; font-family: Arial, sans-serif; line-height: 1.6; margin: 6px 0;"&gt;
+
+  &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #0c7c59;"&gt;
+    ✅ Feedback
+  &lt;/p&gt;
+
+  &lt;p style="margin: 0;"&gt;
+    [EXPLICACIÓN]
+  &lt;/p&gt;
+
+&lt;/div&gt;</pre>
+
+          <button onclick="hideBlock('code-question-feedback')" style="background:none; border:none; color:#666; cursor:pointer; padding:0; margin-top:8px;">
+            Ocultar código
+          </button>
+        </div>
+      </div>
+
     </div>
-
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
-
-      <div style="background-color:#ffffff; border:1px solid #DCDFE5; border-radius:12px; overflow:hidden;">
-        <div style="background-color:#4174c0; color:white; padding:8px 12px; font-size:13px; font-weight:bold;">
-          ACTIVIDAD
-        </div>
-        <div style="padding:18px;">
-          <p style="margin:0 0 8px 0; font-size:18px; font-weight:bold; color:#4174c0;">🧠 Activity template</p>
-          <p style="margin:0 0 14px 0; color:#555; line-height:1.6;">
-            Plantilla completa con objetivo, enunciado y entregable.
-          </p>
-          <a href="activity-template.html" style="color:#4174c0; text-decoration:none; font-weight:bold;">Abrir plantilla →</a>
-        </div>
-      </div>
-
-      <div style="background-color:#ffffff; border:1px solid #DCDFE5; border-radius:12px; overflow:hidden;">
-        <div style="background-color:#5b667a; color:white; padding:8px 12px; font-size:13px; font-weight:bold;">
-          CÓDIGO
-        </div>
-        <div style="padding:18px;">
-          <p style="margin:0 0 8px 0; font-size:18px; font-weight:bold; color:#4174c0;">💻 Code template</p>
-          <p style="margin:0 0 14px 0; color:#555; line-height:1.6;">
-            Bloque de código limpio e integrado para actividades.
-          </p>
-          <a href="code-template.html" style="color:#4174c0; text-decoration:none; font-weight:bold;">Abrir plantilla →</a>
-        </div>
-      </div>
-
-      <div style="background-color:#ffffff; border:1px solid #DCDFE5; border-radius:12px; overflow:hidden;">
-        <div style="background-color:#0c7c59; color:white; padding:8px 12px; font-size:13px; font-weight:bold;">
-          FEEDBACK
-        </div>
-        <div style="padding:18px;">
-          <p style="margin:0 0 8px 0; font-size:18px; font-weight:bold; color:#4174c0;">✅ Feedback template</p>
-          <p style="margin:0 0 14px 0; color:#555; line-height:1.6;">
-            Bloque de feedback con explicación y código solución.
-          </p>
-          <a href="feedback-template.html" style="color:#4174c0; text-decoration:none; font-weight:bold;">Abrir plantilla →</a>
-        </div>
-      </div>
-
-      <div style="background-color:#ffffff; border:1px solid #DCDFE5; border-radius:12px; overflow:hidden;">
-        <div style="background-color:#8c6d1f; color:white; padding:8px 12px; font-size:13px; font-weight:bold;">
-          CUESTIONARIO
-        </div>
-        <div style="padding:18px;">
-          <p style="margin:0 0 8px 0; font-size:18px; font-weight:bold; color:#4174c0;">❓ Question template</p>
-          <p style="margin:0 0 14px 0; color:#555; line-height:1.6;">
-            Plantilla sencilla para enunciados de preguntas en cuestionarios.
-          </p>
-          <a href="question-template.html" style="color:#4174c0; text-decoration:none; font-weight:bold;">Abrir plantilla →</a>
-        </div>
-      </div>
-
-      <div style="background-color:#ffffff; border:1px solid #DCDFE5; border-radius:12px; overflow:hidden;">
-        <div style="background-color:#2e7d32; color:white; padding:8px 12px; font-size:13px; font-weight:bold;">
-          FEEDBACK DE PREGUNTA
-        </div>
-        <div style="padding:18px;">
-          <p style="margin:0 0 8px 0; font-size:18px; font-weight:bold; color:#4174c0;">🟢 Question feedback</p>
-          <p style="margin:0 0 14px 0; color:#555; line-height:1.6;">
-            Feedback ligero y claro para preguntas de cuestionario.
-          </p>
-          <a href="question-feedback.html" style="color:#4174c0; text-decoration:none; font-weight:bold;">Abrir plantilla →</a>
-        </div>
-      </div>
-
-    </div>
-
   </div>
+
+  <script>
+    function togglePreview(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' || el.style.display === '' ? 'block' : 'none';
+    }
+
+    function toggleCode(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' || el.style.display === '' ? 'block' : 'none';
+    }
+
+    function hideBlock(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    async function copyCode(id) {
+      const text = document.getElementById(id).innerText;
+      try {
+        await navigator.clipboard.writeText(text);
+        alert('Código copiado.');
+      } catch (err) {
+        alert('No se pudo copiar el código.');
+      }
+    }
+  </script>
+
 </body>
 </html>
