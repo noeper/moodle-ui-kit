@@ -11,12 +11,12 @@ Kit visual para crear actividades bonitas en Moodle usando HTML inline.
 ---
 
 ## ✨ Qué incluye
-Plantillas hechas en HTML inline (el Moodle de mi Consejería no permite incluir css en el enunciado de la taresas y cuestionarios) 
+Plantillas hechas en HTML inline (el Moodle de mi Consejería no permite incluir css en el enunciado de la tareas y cuestionarios) 
 - 🧠 Plantillas de actividades (objetivo, enunciado, entregable). Para usar en las tareas de Mooodle.
 - 💻 Bloques de código integrados.
 - ✅ Plantillas de feedback con explicación y solución. Para usar en, por ejemplo, las preguntas tipo cloze.
 - ❓ Plantillas para preguntas de cuestionario. Es una plantilla más ligera que la de las tareas, con fondo blanco para que no se vea el backgrouund azul feo de Moodle.
-- 🟢 Feedback específico para preguntas de cuestionarios
+- 🟢 Feedback específico para preguntas de cuestionarios.
 
 ---
 
