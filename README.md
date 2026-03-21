@@ -52,10 +52,10 @@ Plantillas hechas en HTML inline (el Moodle de mi Consejería no permite incluir
 
 ## 👩‍🏫 Autoría
 
-Desarrollado para uso docente en Formación Profesional. Úsalo como quieras.
+Desarrollado para uso docente en Formación Profesional.
 
 ---
 
 ## 📄 Licencia
 
-Uso libre.
+Uso libre. Úsalo como quieras. CC0 1.0 Universal.
