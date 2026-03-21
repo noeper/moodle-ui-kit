@@ -11,23 +11,12 @@ Kit visual para crear actividades bonitas en Moodle usando HTML inline.
 ---
 
 ## ✨ Qué incluye
-
-- 🧠 Plantillas de actividades (objetivo, enunciado, entregable)
-- 💻 Bloques de código integrados
-- ✅ Plantillas de feedback con explicación y solución
-- ❓ Plantillas para preguntas de cuestionario
-- 🟢 Feedback específico para cuestionarios
-
----
-
-## 🎯 Objetivo
-
-Plantillas para usar en Moodle en tareas y preguntas de cuestionario con estilo:
-
-- limpio  
-- coherente  
-- reutilizable  
-- compatible con HTML inline (sin CSS externo ni JavaScript porque Moodle no lo permite)
+Plantillas hechas en HTML inline (el Moodle de mi Consejería no permite incluir css en el enunciado de la taresas y cuestionarios) 
+- 🧠 Plantillas de actividades (objetivo, enunciado, entregable). Para usar en las tareas de Mooodle.
+- 💻 Bloques de código integrados.
+- ✅ Plantillas de feedback con explicación y solución. Para usar en, por ejemplo, las preguntas tipo cloze.
+- ❓ Plantillas para preguntas de cuestionario. Es una plantilla más ligera que la de las tareas, con fondo blanco para que no se vea el backgrouund azul feo de Moodle.
+- 🟢 Feedback específico para preguntas de cuestionarios
 
 ---
 
@@ -38,46 +27,7 @@ Plantillas para usar en Moodle en tareas y preguntas de cuestionario con estilo:
 3. Copia el código  
 4. Pégalo en Moodle  
 5. Sustituye los placeholders:
-# 🧩 Moodle UI Kit
 
-Kit visual para crear actividades y contenido en Moodle usando HTML inline.
-
----
-
-## 🚀 Demo
-
-👉 https://noeper.github.io/moodle-ui-kit/
-
----
-
-## ✨ Qué incluye
-
-- 🧠 Plantillas de actividades (objetivo, enunciado, entregable)
-- 💻 Bloques de código integrados
-- ✅ Plantillas de feedback con explicación y solución
-- ❓ Plantillas para preguntas de cuestionario
-- 🟢 Feedback específico para cuestionarios
-
----
-
-## 🎯 Objetivo
-
-Facilitar la creación de contenido en Moodle con un diseño:
-
-- limpio  
-- coherente  
-- reutilizable  
-- compatible con HTML inline (sin CSS externo ni JavaScript)
-
----
-
-## 📦 Uso
-
-1. Accede a la demo  
-2. Abre la plantilla que necesites  
-3. Copia el código  
-4. Pégalo en Moodle  
-5. Sustituye los placeholders:
 [TÍTULO]
 [OBJETIVO]
 [ENUNCIADO]
@@ -85,16 +35,6 @@ Facilitar la creación de contenido en Moodle con un diseño:
 [EXPLICACIÓN]
 [CÓDIGO]
 
----
-
-## 🧠 Filosofía
-
-Este kit sigue un enfoque práctico:
-
-- ✔ sin dependencias externas  
-- ✔ sin JavaScript (compatible con Moodle)  
-- ✔ diseño consistente  
-- ✔ orientado a docencia  
 
 ---
 
@@ -112,10 +52,10 @@ Este kit sigue un enfoque práctico:
 
 ## 👩‍🏫 Autoría
 
-Desarrollado para uso docente en Formación Profesional.
+Desarrollado para uso docente en Formación Profesional. Úsalo como quieras.
 
 ---
 
 ## 📄 Licencia
 
-Uso libre para fines educativos.
+Uso libre.
