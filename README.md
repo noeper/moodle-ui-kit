@@ -1,6 +1,6 @@
 # 🧩 Moodle UI Kit
 
-Kit visual para crear actividades y contenido en Moodle usando HTML inline.
+Kit visual para crear actividades bonitas en Moodle usando HTML inline.
 
 ---
 
@@ -22,12 +22,12 @@ Kit visual para crear actividades y contenido en Moodle usando HTML inline.
 
 ## 🎯 Objetivo
 
-Facilitar la creación de contenido en Moodle con un diseño:
+Plantillas para usar en Moodle en tareas y preguntas de cuestionario con estilo:
 
 - limpio  
 - coherente  
 - reutilizable  
-- compatible con HTML inline (sin CSS externo ni JavaScript)
+- compatible con HTML inline (sin CSS externo ni JavaScript porque Moodle no lo permite)
 
 ---
 
@@ -100,20 +100,6 @@ Este kit sigue un enfoque práctico:
 
 ## 📁 Estructura
 
----
-
-## 🧠 Filosofía
-
-Este kit sigue un enfoque práctico:
-
-- ✔ sin dependencias externas  
-- ✔ sin JavaScript (compatible con Moodle)  
-- ✔ diseño consistente  
-- ✔ orientado a docencia  
-
----
-
-## 📁 Estructura  
 /
 ├── index.html
 ├── activity-template.html
@@ -121,7 +107,6 @@ Este kit sigue un enfoque práctico:
 ├── feedback-template.html
 ├── question-template.html
 ├── question-feedback.html
-
 
 ---
 
