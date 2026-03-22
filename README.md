@@ -2,11 +2,11 @@
 
 Kit visual para crear actividades bonitas en Moodle usando HTML inline. Pasa de esto: 
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/5d5bf0ba-b775-4731-aa38-0575f9a09652" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/5d5bf0ba-b775-4731-aa38-0575f9a09652" />
 
 A esto otro y haz que tus actividades se vean más bonitas.
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/1360865c-d6dc-4d73-b1a1-489c87644921" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/1360865c-d6dc-4d73-b1a1-489c87644921" />
 
 
 
@@ -48,6 +48,7 @@ Plantillas hechas en HTML inline (el Moodle de mi Consejería no permite incluir
 
 ## 📁 Estructura
 
+```
 /
 ├── index.html
 ├── activity-template.html
@@ -55,6 +56,7 @@ Plantillas hechas en HTML inline (el Moodle de mi Consejería no permite incluir
 ├── feedback-template.html
 ├── question-template.html
 ├── question-feedback.html
+```
 
 ---
 
