@@ -1,15 +1,17 @@
 # 🧩 Moodle UI Kit
 
 Kit visual para crear actividades bonitas en Moodle usando HTML inline. 
-Pasa de esto: 
+<p>Pasa de esto:</p> 
+<div style="margin: 40px 0;">
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/5d5bf0ba-b775-4731-aa38-0575f9a09652" />
-<br>
-<br>
-A esto otro y haz que tus actividades se vean más bonitas.
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/5d5bf0ba-b775-4731-aa38-0575f9a09652" />
+</div>
+<p>A esto otro y haz que tus actividades se vean más bonitas.</p>
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/1360865c-d6dc-4d73-b1a1-489c87644921" />
+<div style="margin: 40px 0;">
 
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/1360865c-d6dc-4d73-b1a1-489c87644921" />
+</div>
 
 
 ---
