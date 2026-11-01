@@ -32,6 +32,10 @@
           Mostrar código
         </button>
 
+        <button onclick="copyCode('code-text-activity')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer; margin-left:8px;">
+          Copiar plantilla
+        </button>
+
         <div id="preview-activity" style="display:none; margin-top:16px;">
           <div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; margin: 12px 0;">
             <div style="background-color: #4174c0; color: white; padding: 6px 12px; font-size: 15px; font-weight: 600;">
@@ -61,11 +65,6 @@
         </div>
 
         <div id="code-activity" style="display:none; margin-top:16px;">
-          <div style="text-align:right; margin-bottom:6px;">
-            <button onclick="copyCode('code-text-activity')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
-              Copiar código
-            </button>
-          </div>
           <pre id="code-text-activity" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; margin: 12px 0;"&gt;
 
   &lt;div style="background-color: #4174c0; color: white; padding: 6px 12px; font-size: 15px; font-weight: 600;"&gt;
@@ -115,6 +114,10 @@
           Mostrar código
         </button>
 
+        <button onclick="copyCode('code-text-code')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer; margin-left:8px;">
+          Copiar plantilla
+        </button>
+
         <div id="preview-code" style="display:none; margin-top:16px;">
           <div style="margin: 12px 0;">
             <div style="text-align: right; font-size: 11px; color: #888; margin-bottom: 4px;">
@@ -129,11 +132,6 @@
         </div>
 
         <div id="code-code" style="display:none; margin-top:16px;">
-          <div style="text-align:right; margin-bottom:6px;">
-            <button onclick="copyCode('code-text-code')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
-              Copiar código
-            </button>
-          </div>
           <pre id="code-text-code" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="margin: 12px 0;"&gt;
 
   &lt;div style="text-align: right; font-size: 11px; color: #888; margin-bottom: 4px;"&gt;
@@ -153,7 +151,7 @@
       <!-- FEEDBACK TEMPLATE -->
       <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px;">
         <strong>✅ Feedback template</strong><br>
-        <span style="color: #666;">Bloque de feedback con explicación y código.</span><br><br>
+        <span style="color: #666;">Bloque de solución con explicación, solución y código. Cada bloque es opcional: borra los que no necesites.</span><br><br>
 
         <button onclick="togglePreview('preview-feedback')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:8px 12px; cursor:pointer; margin-right:8px;">
           Abrir plantilla
@@ -163,20 +161,33 @@
           Mostrar código
         </button>
 
+        <button onclick="copyCode('code-text-feedback')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer; margin-left:8px;">
+          Copiar plantilla
+        </button>
+
         <div id="preview-feedback" style="display:none; margin-top:16px;">
           <div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; margin: 12px 0;">
+
             <div style="background-color: #0c7c59; color: white; padding: 6px 12px; font-weight: 600; font-size: 15px;">
-              ✅ Código solución
+              ✅ Solución
             </div>
-            <div style="background-color: #ffffff; padding: 16px; line-height: 1.6; font-size: 1.05rem; overflow-x: auto;">
-              <div style="margin-bottom: 12px;">
+
+            <div style="background-color: #ffffff; padding: 16px 16px 4px 16px; line-height: 1.6; font-size: 1.05rem; overflow-x: auto;">
+
+              <div style="margin: 0 0 12px 0;">
                 <p style="margin: 0 0 6px 0; font-weight: bold; color: #0c7c59;">💡 Explicación</p>
                 <p style="margin: 0;">[EXPLICACIÓN]</p>
               </div>
-              <div style="margin-top: 12px;">
-                <div style="text-align: right; font-size: 11px; color: #888; margin-bottom: 4px;">Python</div>
-                <pre style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto; margin: 0;"><code>[CÓDIGO SOLUCIÓN]</code></pre>
+
+              <div style="margin: 0 0 12px 0;">
+                <p style="margin: 0;">[SOLUCIÓN]</p>
               </div>
+
+              <div style="margin: 0 0 12px 0;">
+                <div style="text-align: right; font-size: 11px; color: #666; margin-bottom: 4px;">[LENGUAJE]</div>
+                <pre style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto; margin: 0;"><code>[CÓDIGO]</code></pre>
+              </div>
+
             </div>
           </div>
 
@@ -186,27 +197,29 @@
         </div>
 
         <div id="code-feedback" style="display:none; margin-top:16px;">
-          <div style="text-align:right; margin-bottom:6px;">
-            <button onclick="copyCode('code-text-feedback')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
-              Copiar código
-            </button>
-          </div>
           <pre id="code-text-feedback" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; margin: 12px 0;"&gt;
 
   &lt;div style="background-color: #0c7c59; color: white; padding: 6px 12px; font-weight: 600; font-size: 15px;"&gt;
-    ✅ Código solución
+    ✅ Solución
   &lt;/div&gt;
 
-  &lt;div style="background-color: #ffffff; padding: 16px; line-height: 1.6; font-size: 1.05rem; overflow-x: auto;"&gt;
+  &lt;div style="background-color: #ffffff; padding: 16px 16px 4px 16px; line-height: 1.6; font-size: 1.05rem; overflow-x: auto;"&gt;
 
-    &lt;div style="margin-bottom: 12px;"&gt;
+    &lt;!-- OPCIONAL: explicación --&gt;
+    &lt;div style="margin: 0 0 12px 0;"&gt;
       &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #0c7c59;"&gt;💡 Explicación&lt;/p&gt;
       &lt;p style="margin: 0;"&gt;[EXPLICACIÓN]&lt;/p&gt;
     &lt;/div&gt;
 
-    &lt;div style="margin-top: 12px;"&gt;
-      &lt;div style="text-align: right; font-size: 11px; color: #888; margin-bottom: 4px;"&gt;Python&lt;/div&gt;
-      &lt;pre style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto; margin: 0;"&gt;&lt;code&gt;[CÓDIGO SOLUCIÓN]&lt;/code&gt;&lt;/pre&gt;
+    &lt;!-- SOLUCIÓN: texto, lista, tabla o imagen --&gt;
+    &lt;div style="margin: 0 0 12px 0;"&gt;
+      &lt;p style="margin: 0;"&gt;[SOLUCIÓN]&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;!-- OPCIONAL: código --&gt;
+    &lt;div style="margin: 0 0 12px 0;"&gt;
+      &lt;div style="text-align: right; font-size: 11px; color: #666; margin-bottom: 4px;"&gt;[LENGUAJE]&lt;/div&gt;
+      &lt;pre style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 14px; line-height: 1.5; overflow-x: auto; margin: 0;"&gt;&lt;code&gt;[CÓDIGO]&lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
   &lt;/div&gt;
@@ -231,6 +244,10 @@
           Mostrar código
         </button>
 
+        <button onclick="copyCode('code-text-question')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer; margin-left:8px;">
+          Copiar plantilla
+        </button>
+
         <div id="preview-question" style="display:none; margin-top:16px;">
           <div style="background-color: #ffffff; padding: 12px 14px; border-radius: 6px; border: 1px solid #DCDFE5; font-family: Arial, sans-serif; line-height: 1.6; margin: 6px 0;">
             <p style="margin: 0;">❓ [ENUNCIADO DE LA PREGUNTA]</p>
@@ -242,11 +259,6 @@
         </div>
 
         <div id="code-question" style="display:none; margin-top:16px;">
-          <div style="text-align:right; margin-bottom:6px;">
-            <button onclick="copyCode('code-text-question')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
-              Copiar código
-            </button>
-          </div>
           <pre id="code-text-question" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="background-color: #ffffff; padding: 12px 14px; border-radius: 6px; border: 1px solid #DCDFE5; font-family: Arial, sans-serif; line-height: 1.6; margin: 6px 0;"&gt;
 
   &lt;p style="margin: 0;"&gt;
@@ -274,6 +286,10 @@
           Mostrar código
         </button>
 
+        <button onclick="copyCode('code-text-question-feedback')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer; margin-left:8px;">
+          Copiar plantilla
+        </button>
+
         <div id="preview-question-feedback" style="display:none; margin-top:16px;">
           <div style="background-color: #ffffff; padding: 12px 14px; border-radius: 6px; border: 1px solid #DCDFE5; font-family: Arial, sans-serif; line-height: 1.6; margin: 6px 0;">
             <p style="margin: 0 0 6px 0; font-weight: bold; color: #0c7c59;">✅ Feedback</p>
@@ -286,11 +302,6 @@
         </div>
 
         <div id="code-question-feedback" style="display:none; margin-top:16px;">
-          <div style="text-align:right; margin-bottom:6px;">
-            <button onclick="copyCode('code-text-question-feedback')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:7px 10px; cursor:pointer;">
-              Copiar código
-            </button>
-          </div>
           <pre id="code-text-question-feedback" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="background-color: #ffffff; padding: 12px 14px; border-radius: 6px; border: 1px solid #DCDFE5; font-family: Arial, sans-serif; line-height: 1.6; margin: 6px 0;"&gt;
 
   &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #0c7c59;"&gt;
@@ -328,12 +339,12 @@
     }
 
     async function copyCode(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).textContent;
       try {
         await navigator.clipboard.writeText(text);
-        alert('Código copiado.');
+        alert('Plantilla copiada.');
       } catch (err) {
-        alert('No se pudo copiar el código.');
+        alert('No se pudo copiar la plantilla.');
       }
     }
   </script>

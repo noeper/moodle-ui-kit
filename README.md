@@ -46,6 +46,8 @@ Plantillas hechas en HTML inline (el Moodle de mi Consejería no permite incluir
 [ENUNCIADO]
 [ENTREGABLE]
 [EXPLICACIÓN]
+[SOLUCIÓN]
+[LENGUAJE]
 [CÓDIGO]
 
 
