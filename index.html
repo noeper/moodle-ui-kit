@@ -148,6 +148,40 @@
         </div>
       </div>
 
+      <!-- COMMAND TEMPLATE -->
+      <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px;">
+        <strong>⌨️ Comando de terminal</strong><br>
+        <span style="color: #666;">Comando con fondo oscuro, listo para copiar y pegar en Moodle.</span><br><br>
+
+        <button onclick="togglePreview('preview-command')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:8px 12px; cursor:pointer; margin-right:8px;">
+          Mostrar plantilla
+        </button>
+
+        <button onclick="toggleCode('code-command')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer;">
+          Mostrar código
+        </button>
+
+        <button onclick="copyCode('code-text-command')" style="background-color:#ffffff; color:#4174c0; border:1px solid #4174c0; border-radius:6px; padding:8px 12px; cursor:pointer; margin-left:8px;">
+          Copiar plantilla
+        </button>
+
+        <div id="preview-command" style="display:none; margin-top:16px;">
+          <pre style="background: #272b2e; color: #e8e8e8; padding: 12px 16px; border-radius: 6px; margin: 12px 0; overflow-x: auto; white-space: pre; font-family: Consolas, 'Courier New', monospace; font-size: 14px; line-height: 1.5;"><code style="background: transparent; color: inherit; padding: 0; font-family: inherit; font-size: inherit;">winver</code></pre>
+
+          <button onclick="hideBlock('preview-command')" style="background:none; border:none; color:#666; cursor:pointer; padding:0;">
+            Ocultar plantilla
+          </button>
+        </div>
+
+        <div id="code-command" style="display:none; margin-top:16px;">
+          <pre id="code-text-command" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;pre style=&quot;background: #272b2e; color: #e8e8e8; padding: 12px 16px; border-radius: 6px; margin: 12px 0; overflow-x: auto; white-space: pre; font-family: Consolas, &#39;Courier New&#39;, monospace; font-size: 14px; line-height: 1.5;&quot;&gt;&lt;code style=&quot;background: transparent; color: inherit; padding: 0; font-family: inherit; font-size: inherit;&quot;&gt;winver&lt;/code&gt;&lt;/pre&gt;</pre>
+
+          <button onclick="hideBlock('code-command')" style="background:none; border:none; color:#666; cursor:pointer; padding:0; margin-top:8px;">
+            Ocultar código
+          </button>
+        </div>
+      </div>
+
       <!-- FEEDBACK TEMPLATE -->
       <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px;">
         <strong>✅ Feedback template</strong><br>
