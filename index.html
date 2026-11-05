@@ -22,7 +22,7 @@
       <!-- ACTIVITY TEMPLATE -->
       <div style="background-color: #ffffff; border: 1px solid #DCDFE5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px;">
         <strong>🧠 Activity template</strong><br>
-        <span style="color: #666;">Plantilla completa con objetivo, enunciado y entregable.</span><br><br>
+        <span style="color: #666;">Plantilla con dos secciones personalizables: icono, título y descripción.</span><br><br>
 
         <button onclick="togglePreview('preview-activity')" style="background-color:#4174c0; color:white; border:none; border-radius:6px; padding:8px 12px; cursor:pointer; margin-right:8px;">
           Mostrar plantilla
@@ -37,27 +37,28 @@
         </button>
 
         <div id="preview-activity" style="display:none; margin-top:16px;">
-          <div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; margin: 12px 0;">
-            <div style="background-color: #4174c0; color: white; padding: 6px 12px; font-size: 15px; font-weight: 600;">
-              🧠 [TÍTULO DE LA ACTIVIDAD]
-            </div>
-            <div style="padding: 20px; font-size: 1.05rem; line-height: 1.6; overflow-x: auto;">
-              <div style="margin: 12px 0;">
-                <p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;">🎯 Objetivo</p>
-                <p style="margin: 0;">[DESCRIPCIÓN DEL OBJETIVO]</p>
-              </div>
-              <hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;">
-              <div style="margin: 12px 0;">
-                <p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;">📋 Enunciado</p>
-                <div>[INSTRUCCIONES / PASOS / TEXTO DEL EJERCICIO]</div>
-              </div>
-              <hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;">
-              <div style="margin: 12px 0;">
-                <p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;">📤 Entregable</p>
-                <p style="margin: 0;">[QUÉ DEBE ENTREGAR EL ALUMNO]</p>
-              </div>
-            </div>
-          </div>
+<div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; margin: 12px 0;">
+
+  <div style="background-color: #4174c0; color: white; padding: 6px 12px; font-size: 15px; font-weight: 600;">
+    🧠 [TÍTULO DE LA ACTIVIDAD]
+  </div>
+
+  <div style="padding: 20px; font-size: 1.05rem; line-height: 1.6; overflow-x: auto;">
+
+    <div style="margin: 12px 0;">
+      <p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;">[ICONO][TÍTULO DE SECCIÓN]</p>
+      <p style="margin: 0;">[DESCRIPCIÓN DE LA SECCIÓN]</p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;">
+
+    <div style="margin: 12px 0;">
+      <p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;">[ICONO][TÍTULO DE SECCIÓN]</p>
+      <p style="margin: 0;">[DESCRIPCIÓN DE LA SECCIÓN]</p>
+    </div>
+
+  </div>
+</div>
 
           <button onclick="hideBlock('preview-activity')" style="background:none; border:none; color:#666; cursor:pointer; padding:0;">
             Ocultar plantilla
@@ -65,31 +66,24 @@
         </div>
 
         <div id="code-activity" style="display:none; margin-top:16px;">
-          <pre id="code-text-activity" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style="border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; margin: 12px 0;"&gt;
+          <pre id="code-text-activity" style="background-color: #f6f8fa; border: 1px solid #E1E4E8; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 13px; line-height: 1.5; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;div style=&quot;border: 1px solid #DCDFE5; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; margin: 12px 0;&quot;&gt;
 
-  &lt;div style="background-color: #4174c0; color: white; padding: 6px 12px; font-size: 15px; font-weight: 600;"&gt;
-    🧠 [TÍTULO DE LA ACTIVIDAD]
+  &lt;div style=&quot;background-color: #4174c0; color: white; padding: 6px 12px; font-size: 15px; font-weight: 600;&quot;&gt;
+    &#129504; [T&#205;TULO DE LA ACTIVIDAD]
   &lt;/div&gt;
 
-  &lt;div style="padding: 20px; font-size: 1.05rem; line-height: 1.6; overflow-x: auto;"&gt;
+  &lt;div style=&quot;padding: 20px; font-size: 1.05rem; line-height: 1.6; overflow-x: auto;&quot;&gt;
 
-    &lt;div style="margin: 12px 0;"&gt;
-      &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;"&gt;🎯 Objetivo&lt;/p&gt;
-      &lt;p style="margin: 0;"&gt;[DESCRIPCIÓN DEL OBJETIVO]&lt;/p&gt;
+    &lt;div style=&quot;margin: 12px 0;&quot;&gt;
+      &lt;p style=&quot;margin: 0 0 6px 0; font-weight: bold; color: #4174c0;&quot;&gt;[ICONO][T&#205;TULO DE SECCI&#211;N]&lt;/p&gt;
+      &lt;p style=&quot;margin: 0;&quot;&gt;[DESCRIPCI&#211;N DE LA SECCI&#211;N]&lt;/p&gt;
     &lt;/div&gt;
 
-    &lt;hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;"&gt;
+    &lt;hr style=&quot;border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;&quot;&gt;
 
-    &lt;div style="margin: 12px 0;"&gt;
-      &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;"&gt;📋 Enunciado&lt;/p&gt;
-      &lt;div&gt;[INSTRUCCIONES / PASOS / TEXTO DEL EJERCICIO]&lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;hr style="border: none; border-top: 1px solid #DCDFE5; margin: 16px 0;"&gt;
-
-    &lt;div style="margin: 12px 0;"&gt;
-      &lt;p style="margin: 0 0 6px 0; font-weight: bold; color: #4174c0;"&gt;📤 Entregable&lt;/p&gt;
-      &lt;p style="margin: 0;"&gt;[QUÉ DEBE ENTREGAR EL ALUMNO]&lt;/p&gt;
+    &lt;div style=&quot;margin: 12px 0;&quot;&gt;
+      &lt;p style=&quot;margin: 0 0 6px 0; font-weight: bold; color: #4174c0;&quot;&gt;[ICONO][T&#205;TULO DE SECCI&#211;N]&lt;/p&gt;
+      &lt;p style=&quot;margin: 0;&quot;&gt;[DESCRIPCI&#211;N DE LA SECCI&#211;N]&lt;/p&gt;
     &lt;/div&gt;
 
   &lt;/div&gt;
